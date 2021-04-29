@@ -1,27 +1,13 @@
 import read_file
 from utilts import clear_screen
 
-"""show_history function: shows the processes made to a certain account"""
-
 
 def print_process(process):
     date = '{}'.format(process[2:7])
-    print('{0}\t{1}\t{2}{3: ^10} {4: ^10}'.format(
-        process[0],
-        process[1].center(len('change_password')),
-        date.center(len(date)),
-        process[7],
-        process[8]
-    )
-    )
+    print('{0}\t{1}\t{2}{3: ^10} {4: ^10}'.format(process[0], process[1].center(len('change_password')), date.center(len(date)), process[7], process[8]))
 
 
 def activity_history(ls):
-    # ls is the list contains account data
-    # ls[0] id
-    # ls[1] name
-    # ls[2] password
-    # ls[3] balance
 
     choice = int(input('1) show deposit processes\n2) show withdraw processes\n3) show '
                        'change password process\n4) show all processes\n'
@@ -30,11 +16,6 @@ def activity_history(ls):
     file_name = ls[0] + '.txt'
     id_list = read_file.read_file(file_name)
 
-    # id_list[line][0]    process_id
-    # id_list[line][1]    process_type
-    # id_list[line][2:6]  process_date
-    # id_list[line][7]    before_process
-    # id_list[line][8]    after_process
     clear_screen()
     top_line = '\nID\t' + 'Type'.center(len('change_password')) + 'Date and Time'.center(40) + 'before'.center(
         10) + 'after'.center(15)
@@ -59,7 +40,7 @@ def activity_history(ls):
         new_file = open(file_name, 'wb')
         new_file.close()
     else:
-        print('ERROR: Wrong choice')
+        print('Wrong choice. Please try again later')
 
     input('\nPress Enter to go back..')
     clear_screen()

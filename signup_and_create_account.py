@@ -2,8 +2,6 @@ from utilts import clear_screen
 
 
 def signup_and_create_account(ls):
-    # ls is a list of lists of lines in accounts file
-    # ls is the accounts_list
 
     clear_screen()
     account_name = input('Enter Your Name (WITHOUT SPACES): ')

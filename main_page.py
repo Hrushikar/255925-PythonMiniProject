@@ -10,23 +10,21 @@ accounts_list = read_file('Accounts.txt')
 
 
 def main_page():
-    print('>>>>>>>>WELCOME<<<<<<<<\n')
+    print('-------->WELCOME<--------\n')
     choice = int(input('1) Login\n2) Create Account\n3) Exit\n\nchoice>> '))
     if choice == 1:
         clear_screen()
         try:
-            # to enable the option of (ctrl+c) to go back
             login_page(accounts_list)
         except KeyboardInterrupt:
             clear_screen()
     elif choice == 2:
         signup_and_create_account(accounts_list)
     elif choice == 3:
-        # close the program
         exit(0)
     else:
         clear_screen()
-        print("ERROR: Wrong choice\n")
+        print("Wrong choice. Please try again later\n")
 
     main_page()
 

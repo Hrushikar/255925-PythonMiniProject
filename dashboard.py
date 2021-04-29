@@ -6,11 +6,6 @@ from utilts import clear_screen
 
 
 def dashboard(account):
-    # account is a list of account information
-    # account[0] -> id
-    # account[1] -> name
-    # account[2] -> password
-    # account[3] -> balance
 
     print("\n------Hello, {0}------ ".format(account[1]))
     ch = int(input("\n1) show info \n2) show process history\n3) deposit\n4) withdraw\n"
@@ -29,8 +24,7 @@ def dashboard(account):
         change_password.change_password(account)
     elif ch == 6:
         return
-        # logout - go back to menu1
     else:
-        print("ERROR: Wrong choice\n")
+        print("Wrong choice. Please try again later\n")
 
     dashboard(account)
