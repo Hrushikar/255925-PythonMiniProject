@@ -12,7 +12,8 @@ accounts_list = read_file('Accounts.txt')
 
 
 def main_page():
-    print('-------->WELCOME<--------\n')
+    print('Welcome to the ATM\n')
+
     choice = int(input('1) Login\n2) Create A New Account\n3) Exit\n\nchoice>> '))
     if choice == 1:
         clear_screen()
