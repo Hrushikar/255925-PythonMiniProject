@@ -1,3 +1,5 @@
+import time
+
 import read_file
 from utilts import clear_screen
 
@@ -43,4 +45,5 @@ def activity_history(ls):
         print('Wrong choice. Please try again later')
 
     input('\nPress Enter to go back..')
+    time.sleep(3)
     clear_screen()

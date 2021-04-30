@@ -1,2 +1,2 @@
-1	HrushikarTejaK	tejak	800	
-2	Krishna	krishna	3500	
+1	HrushikarTeja	tejak	700	
+2	Krishna	krish	2400	

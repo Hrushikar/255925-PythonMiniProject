@@ -1,3 +1,4 @@
+import time
 from utilts import clear_screen
 
 
@@ -25,3 +26,4 @@ def signup_and_create_account(ls):
     id_file.close()
     accounts_file.close()
     ls.append([str(new_last_id), account_name, account_password, '0'])
+    time.sleep(5)

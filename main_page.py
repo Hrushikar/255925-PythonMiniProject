@@ -1,3 +1,5 @@
+import time
+
 from login_page import login_page
 from signup_and_create_account import signup_and_create_account
 from read_file import read_file
@@ -11,7 +13,7 @@ accounts_list = read_file('Accounts.txt')
 
 def main_page():
     print('-------->WELCOME<--------\n')
-    choice = int(input('1) Login\n2) Create Account\n3) Exit\n\nchoice>> '))
+    choice = int(input('1) Login\n2) Create A New Account\n3) Exit\n\nchoice>> '))
     if choice == 1:
         clear_screen()
         try:
@@ -21,6 +23,8 @@ def main_page():
     elif choice == 2:
         signup_and_create_account(accounts_list)
     elif choice == 3:
+        print('Exiting...')
+        time.sleep(2)
         exit(0)
     else:
         clear_screen()
