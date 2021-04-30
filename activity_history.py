@@ -4,7 +4,7 @@ import read_file
 from utilts import clear_screen
 
 
-def print_process(process):
+def print_activity(process):
     date = '{}'.format(process[2:7])
     print('{0}\t{1}\t{2}{3: ^10} {4: ^10}'.format(process[0], process[1].center(len('change_password')), date.center(len(date)), process[7], process[8]))
 
@@ -26,18 +26,18 @@ def activity_history(ls):
     if choice == 1:
         for line in id_list:
             if line[1] == 'deposit':
-                print_process(line)
+                print_activity(line)
     elif choice == 2:
         for line in id_list:
             if line[1] == 'withdraw':
-                print_process(line)
+                print_activity(line)
     elif choice == 3:
         for line in id_list:
             if line[1] == 'change_password':
-                print_process(line)
+                print_activity(line)
     elif choice == 4:
         for line in id_list:
-            print_process(line)
+            print_activity(line)
     elif choice == 5:
         new_file = open(file_name, 'wb')
         new_file.close()
