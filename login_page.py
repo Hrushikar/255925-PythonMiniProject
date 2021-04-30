@@ -12,7 +12,8 @@ def login_page(acc_list):
         if account[0] == login_id and account[2] == login_password:
             found = True
             clear_screen()
-            time.sleep(3)
+            print('Please wait while you are being logged in...')
+            time.sleep(2)
             dashboard(account)
             break
         else:
@@ -31,7 +32,7 @@ def login_page(acc_list):
 
     else:
         acc_file = open('Accounts.txt', 'wb')
-        print('Saving changes...')
+        print('Saving changes...\nPlease wait while you are being logged out')
         for acc in acc_list:
             for elements in acc:
                 acc_file.write(("%s\t" % elements).encode('utf-8'))
