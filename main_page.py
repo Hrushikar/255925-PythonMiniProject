@@ -12,9 +12,9 @@ accounts_list = read_file('Accounts.txt')
 
 
 def main_page():
-    print('Welcome to the ATM\n')
+    print('==========Welcome to the ATM==========\n')
 
-    choice = int(input('1) Login\n2) Create A New Account\n3) Exit\n\nchoice>> '))
+    choice = int(input('1) Login\n2) Create A New Account\n3) Exit\n\nChoice: '))
     if choice == 1:
         clear_screen()
         try:
@@ -24,7 +24,7 @@ def main_page():
     elif choice == 2:
         signup_and_create_account(accounts_list)
     elif choice == 3:
-        print('Exiting...')
+        print('Thank you. See you again.\nExiting...')
         time.sleep(2)
         exit(0)
     else:
