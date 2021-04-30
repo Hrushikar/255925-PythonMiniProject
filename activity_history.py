@@ -11,9 +11,9 @@ def print_process(process):
 
 def activity_history(ls):
 
-    choice = int(input('1) show deposit processes\n2) show withdraw processes\n3) show '
-                       'change password process\n4) show all processes\n'
-                       '5) clear processes\n\nchoice>> '))
+    choice = int(input('1) Show deposit activity\n2) Show withdrawal activity\n3) Show '
+                       'password change activity\n4) Show all activities\n'
+                       '5) Clear activities\n\nChoice: '))
 
     file_name = ls[0] + '.txt'
     id_list = read_file.read_file(file_name)
