@@ -1,7 +1,9 @@
 # 255925: StepIn - Python Mini Project
 
+
 ## Project description:
 ### The project demonstrates the working of a banking system (ATM functions)
+
 
 ## Functionalities of the application:
 ### It has the following functionalities:
