@@ -1,2 +1,1 @@
-1	HrushikarTeja	tejak	700	
-2	Krishna	krish	2400	
+1	UserName	password	700	
